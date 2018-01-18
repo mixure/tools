@@ -1,7 +1,5 @@
 #! /usr/bin/env bash
 
-
-
 file_name=$(date +%Y%m%d_%H:%M)
 
 adb shell screencap -p /sdcard/screen.png
