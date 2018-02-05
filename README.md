@@ -1,2 +1,3 @@
-# wow
-just a place to stroge my mess code
+# Tools
+lemur: GUI monkey
+phone: scripts about android
