@@ -3,7 +3,11 @@
 
 reg=Regexp.new ARGV[0]
 $:.each do |path|
-  Dir.foreach(path) do |file|
-    puts path if reg.match file
+  begin
+    Dir.foreach(path) do |file|
+      puts path if reg.match file
+    end
+  rescue
+    puts "exception occure in #{path}"
   end
 end
