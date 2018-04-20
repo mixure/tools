@@ -21,5 +21,3 @@ py2
   保存配置后再次启动,会从 ～.lemur读取
 3.根据当前插接的安卓设备和选项信息生成shell
 
-ps:
- ui参考https://github.com/mixure/AndroidTools
