@@ -18,7 +18,7 @@ lemur是android monkey的GUI程序,依赖于tk
 
 使用:
 
-- 1.根据当前的输入生成adb monkey
+- 1.根据当前的输入生成 monkey shell
 - 2.可保存配置,记录在～.lemur
   保存配置后再次启动,会从 ～.lemur读取
 - 3.根据当前插接的安卓设备和选项信息生成shell
