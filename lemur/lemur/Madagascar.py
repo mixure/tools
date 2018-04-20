@@ -65,3 +65,4 @@ if __name__=='__main__':
     m=Madagascar()
     m.dump({'key':'value'})
     print m.load()
+    pass
