@@ -35,3 +35,4 @@ class WipeFruit:
             if sum>100:
                 return '事件总数大于100%'
             return ' '.join(shell)
+            pass
