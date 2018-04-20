@@ -2,6 +2,12 @@
 
 lemur是android monkey的GUI程序,依赖于tk
 
+
+
+
+
+<img src="https://github.com/mixure/tools/blob/master/lemur/lemur.png" width = "300" height = "600" alt="图片名称" align=left />
+
 安装:
 
 - 1.python2 setup.py install 后,在命令行执行lemur
