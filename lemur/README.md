@@ -1,16 +1,12 @@
 # lemur
 
 lemur是monkey shell的GUI程序.
-
-存在问题:
-1.对于任意输入没做判断
-2.不能保证在所有的平台下都能正常工作,它依赖于tk
+依赖于tk
 
 安装:
-1.python setup.py install 后,在命令行执行lemur
+1.python2 setup.py install 后,在命令行执行lemur
 2.安装依赖于setuptools
-3.若不能安装
-   直接执行python lemur/lemur.py
+3.或 直接执行python2 lemur/lemur.py
 
 执行环境:
 py2
