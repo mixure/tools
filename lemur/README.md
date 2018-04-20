@@ -14,8 +14,7 @@ lemur是android monkey的GUI程序,依赖于tk
 - 2.安装依赖于setuptools
 - 3.或 直接执行python2 lemur/lemur.py
 
-执行环境:
-py2
+
 
 使用:
 
