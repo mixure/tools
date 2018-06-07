@@ -9,7 +9,7 @@ dir_=os.path.dirname(
 test_dir=os.path.join(dir_,'test_cases')
 discover=unittest.defaultTestLoader.discover(
             test_dir,
-            pattern='test3.py',
+            pattern='test*.py',
             # top_level_dir=None
         )
 
@@ -34,8 +34,15 @@ if __name__=='__main__':
     # https://github.com/GoverSky/HTMLTestRunner_cn
     import utilities.HTMLTestRunner_cn as HTMLTestRunner
 
-    #  https://github.com/findyou/HTMLTestRunnerCN/tree/dev
-    # import utilities.HTMLTestRunnerCN as HTMLTestRunner
+    # https://github.com/findyou/HTMLTestRunnerCN/tree/dev
+    import utilities.HTMLTestRunnerCN as HTMLTestRunner
+
+
+    # from utilities.BeautifulReport import BeautifulReport
+    # print(test_unit)
+    # result = BeautifulReport(test_unit)
+    # result.report(filename='report.html', description='测试deafult报告', log_path='report')
+
 
     report_dir=os.path.join(dir_,'report')
     report_file=os.path.join(report_dir,'{}.html'.format(
