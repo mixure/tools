@@ -3,6 +3,7 @@
 import unittest
 from selenium import webdriver
 import time
+from utilities.logger import logger
 
 # class Testaa(unittest.TestCase):
 #     u'''测试用例a的集合'''
@@ -41,6 +42,7 @@ class Test(unittest.TestCase):
     def test01(self):
         '''01'''
         self.assertTrue(True)
+        logger.debug('in test2.py')
 
     def test02(self):
         '''02'''
