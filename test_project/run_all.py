@@ -5,19 +5,10 @@ from utilities.BeautifulReport import BeautifulReport
 from utilities.logger import logger
 import os
 from tomorrow import threads
+from config import config
 
 
-# 获取路径
-curpath = os.path.dirname(os.path.realpath(__file__))
-casepath = os.path.join(curpath, "test_cases")
-if not os.path.exists(casepath):
-    print("测试用例需放到‘test_cases’文件目录下")
-    os.mkdir(casepath)
-reportpath = os.path.join(curpath, "report")
-if not os.path.exists(reportpath): os.mkdir(reportpath)
-
-
-def add_case(case_path=casepath, rule="test2.py"):
+def add_case(case_path=config.Path.test_cases_dir, rule="test*.py"):
     '''加载所有的测试用例'''
     discover = unittest.defaultTestLoader.discover(case_path,
                                                   pattern=rule,
@@ -32,8 +23,6 @@ def run(test_suit):
 if __name__ == "__main__":
     # 用例集合
     cases = add_case()
-
-    # print(cases)
     for i in cases:
         print(i)
         run(i)
