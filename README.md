@@ -14,4 +14,3 @@
 
 **test_project**: unittest 测试
 
-**web2py.tar**:  "用python写网络爬虫"示例网站. 使用方法解压后看readme
