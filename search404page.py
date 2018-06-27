@@ -8,7 +8,7 @@ from bs4 import BeautifulSoup
 from logzero import logger
 
 domain="https://www.yirendai.com/abc"
-title404="很抱歉，您访问的页面不存在"
+title404="您访问的页面不存在"
 page_size404=1308
 dr=webdriver.Firefox()
 
@@ -37,7 +37,7 @@ def scrap_url(url,orginal_url):
     more_seeds=[]
     #有些网站的站内的超链接不是href参数提供的,需要继续在if修改
     # 有些还有外链，都是在这处理....
-    if status_code==200:  # 有些网站404页面有本站超链接
+    if True or status_code==200:  # 有些网站404页面有本站链接,比如宜信
         for a in soup.find_all(href=True):
             if a['href'].startswith('/'):
                 more_seeds.append((urljoin(domain,a['href']),url))
