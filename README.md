@@ -16,7 +16,5 @@
 
 **search404page.py** : 404页面查找
 
-
-
- ![] (https://github.com/mixure/tools/blob/master/search404page.jpg ）
+    ![imag](https://github.com/mixure/tools/master/search404page.jpg)
 
