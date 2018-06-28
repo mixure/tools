@@ -16,5 +16,5 @@
 
 **search404page.py** : 404页面查找
 
- ![image](https://images2018.cnblogs.com/blog/546825/201806/546825-20180628104231104-1596458914.png）
+ ![image](https://github.com/mixure/tools/blob/master/search404page.jpg）
 
