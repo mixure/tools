@@ -22,3 +22,5 @@
 
 ![imag](https://github.com/mixure/tools/blob/master/search404page.jpg)
 
+rakefile.rb :  编译jav
+
