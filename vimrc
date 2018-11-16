@@ -44,3 +44,4 @@ filetype plugin indent on " required
 
 autocmd vimenter * NERDTree
 let NERDTreeWinPos=1
+
