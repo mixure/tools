@@ -11,7 +11,12 @@ class People(type):
         logger.debug('People __new__')
         return type.__new__(cls, class_name, class_bases, class_dic)
 
-    def __init__(self, class_name, class_bases, class_dic):
+    def __init__(self, class_name, class_bases, class_dic):  
+        """
+            初始化检查可以放在People.__new__当中吗，如果可以，类对象的初始化__init__到底做什么工作?
+            People作为元类，Employee的父类，为什么 Employee的实例方法也要在__new__是传入？为什么不是Employee的类方法，类变量传入？
+        """
+                                                             
         logger.debug('People __init__')
         if class_name.islower():
             raise TypeError('类名必须使用驼峰体')
