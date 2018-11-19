@@ -5,8 +5,8 @@
 yum -y install git
 
 #
-echo "vi=vim">>$HOME/.bashrc
-echo "h=histroy">>$HOME/.bashrc
+echo "alias vi=vim">>$HOME/.bashrc
+echo "alias h=histroy">>$HOME/.bashrc
 
 #
 echo "LC_ALL=en_US.UTF-8
