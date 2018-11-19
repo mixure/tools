@@ -46,6 +46,7 @@ sed -i '205s/#//g' Modules/Setup
 sed -i '210,212s/#//g' Modules/Setup
 make && make install
 sed -i '$a export PATH=$PATH:'"/usr/local/$python/bin" /etc/profile
+cd -
 rm -rf $python
 
 # rvm
