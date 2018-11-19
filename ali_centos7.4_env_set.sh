@@ -2,7 +2,7 @@
 #
 
 #
-yum install git
+yum -y install git
 
 #
 echo "vi=vim">>$HOME/.bashrc
