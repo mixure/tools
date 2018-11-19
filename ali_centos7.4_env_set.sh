@@ -61,7 +61,7 @@ git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 mldonkey=`ls|grep mldonkey`
 cp -r $mldonkey /usr/local
 cd /usr/local/$mldonkey
-echo y|./configure
+./configure
 gmake
 cp /usr/local/$mldonkey/mlnet /usr/bin/mlnet
 
