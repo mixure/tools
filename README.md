@@ -22,5 +22,8 @@
 
 ![imag](https://github.com/mixure/tools/blob/master/search404page.jpg)
 
-rakefile.rb :  编译jav
+**rakefile.rb** :  编译java
+**Se_screenshot.py** : 装饰器完成Se截图
+**vimrc_mac** : mac下的vim配置
+**nginx**: /etc/init.d/nginx
 
