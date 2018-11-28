@@ -1,0 +1,26 @@
+#! /bin/bash
+
+DAEMON=/usr/local/nginx/sbin/nginx
+case "$1" in
+	start)
+		echo "Starting nginx daemon..."
+		$DAEMON &&echo "SUCCESS"
+		;;
+	stop)
+		echo "Stoppint nginx daemon..."
+		$DAEMON -s quit && echo "SUCCESS"
+		;;
+	reload)
+		echo "Reloading nginx daemon..."
+		$DAEMON -s reload && echo "SUCCESS"
+		;;
+	restart)
+		echo "Restarting nginx daemon..."
+		$DAEMON -s quit
+		$DAEMON && echo "SUCCESS"
+		;;
+	*)
+		echo "Usage: service nginx {start|stop|restart|reload}"
+		exit 2
+	;;
+esac
