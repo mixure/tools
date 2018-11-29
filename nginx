@@ -1,4 +1,5 @@
 #! /bin/bash
+# chkconfig: 3 85 15
 
 DAEMON=/usr/local/nginx/sbin/nginx
 case "$1" in
