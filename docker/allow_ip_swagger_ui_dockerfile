@@ -1,7 +1,0 @@
-FROM swaggerapi/swagger-ui
-MAINTAINER mixture
-COPY ./run.sh /usr/share/nginx/run.sh  
-
-
-# 添加IP环境变量，改变nginx.conf中allow 参数，使容器只能在特定ip访问
-# docker run -p 80:8080 -e SWAGGER_JSON=/foo/swagger.json -e IP=58.30.51.4 -v /bar:/foo swaggerapi/swagger-ui
