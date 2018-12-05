@@ -30,7 +30,7 @@
 
 **nginx**: /etc/init.d/nginx
 
-**grant_root_remote_visit_mysql.sh**  shell授权root远程登陆mysql 容器
+**grant_root_remote_visit_mysql.sh** :  shell授权root远程登陆mysql 容器
 
 
 ---
