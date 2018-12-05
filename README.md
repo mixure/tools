@@ -30,4 +30,10 @@
 
 **nginx**: /etc/init.d/nginx
 
+**grant_root_remote_visit_mysql.sh**  shell授权root远程登陆mysql 容器
+
+
+---
+someuseful urls
+
 [docker mysql utf-8配置](https://github.com/ibusybox/mysqlutf8)
