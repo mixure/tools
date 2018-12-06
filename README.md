@@ -37,3 +37,5 @@
 someuseful urls
 
 [docker mysql utf-8配置](https://github.com/ibusybox/mysqlutf8)
+
+思寒的UICrawler https://github.com/mixure/UICrawler
