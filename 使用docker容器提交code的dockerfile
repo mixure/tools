@@ -1,0 +1,7 @@
+FROM alpine/git
+COPY .ssh /root/.ssh
+COPY .gitconfig /root/
+
+# .ssh 目录下有公私钥,known_hosts文件(否则每次提交都要输入yes)
+# .gitconfig 全局 用户名/邮箱
+# 详细使用见https://hub.docker.com/r/alpine/git/  ;务必进入git目录后source .~/.bash_profile一次，使git代表的命令获得当前$PWD
