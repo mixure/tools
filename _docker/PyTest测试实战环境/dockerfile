@@ -1,0 +1,10 @@
+FROM realite/python3.6
+COPY ./tasks_proj /tmp/tasks_proj
+RUN pip3 install -U pytest &&\
+	cd /tmp/tasks_proj&&\
+	python3 setup.py install &&\
+	cd ~ &&\
+	rm -rf /tmp/task_proj &&\
+	mkdir tasks_db
+
+# PyTest测试实战环境
