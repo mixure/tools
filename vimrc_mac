@@ -1,3 +1,5 @@
+set·cursorline
+set·cursorcolumn
 set hlsearch "高亮度反白
 set backspace=2 "可随时退格键删除
 set ruler "可显示最后一行的状态
@@ -27,6 +29,7 @@ call vundle#begin()
 
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'git://github.com/scrooloose/nerdtree.git'
+Plugin·'jiangmiao/auto-pairs'
 
 call vundle#end() " required
 filetype plugin indent on " required
