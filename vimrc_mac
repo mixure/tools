@@ -2,7 +2,7 @@ set cursorline
 set cursorcolumn
 set hlsearch "高亮度反白 set hls|nohls
 set incsearch "递进搜索
-"set ic "搜索忽略大小写, 或z /abc\c
+"set ic "搜索忽略大小写, 或者 /abc\c 仅限当前一次使用
 set backspace=2 "可随时退格键删除
 set ruler "可显示最后一行的状态
 set showmode "左下脚一行状态,__INSERT__
