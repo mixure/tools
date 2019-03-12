@@ -1,6 +1,8 @@
-set·cursorline
-set·cursorcolumn
-set hlsearch "高亮度反白
+set cursorline
+set cursorcolumn
+set hlsearch "高亮度反白 set hls|nohls
+set incsearch "递进搜索
+"set ic "搜索忽略大小写, 或z /abc\c
 set backspace=2 "可随时退格键删除
 set ruler "可显示最后一行的状态
 set showmode "左下脚一行状态,__INSERT__
@@ -16,12 +18,12 @@ set expandtab "表示Tab自动转换成空格
 set autoindent "表示换行后自动缩进
 set smartindent "智能对齐
 
-set listchars=tab:>-,trail:-,space:· "空格显示为点
-set list
+"set listchars=tab:>-,trail:-,space:· "空格显示为点
+"set list
 colorscheme delek
 
 "https://github.com/VundleVim/Vundle.vim
-set nocompatible " be iMproved, required
+set nocompatible " be iMproved, required; set nocp
 filetype off " required
 " set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/Vundle.vim
@@ -29,7 +31,7 @@ call vundle#begin()
 
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'git://github.com/scrooloose/nerdtree.git'
-Plugin·'jiangmiao/auto-pairs'
+Plugin 'jiangmiao/auto-pairs'
 
 call vundle#end() " required
 filetype plugin indent on " required
@@ -47,4 +49,8 @@ filetype plugin indent on " required
 
 autocmd vimenter * NERDTree
 let NERDTreeWinPos=1
+map <F2> :NERDTreeToggle<CR> " 使用F2触发
+map <F3> :NERDTreeMirror<CR> 
+"autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") &&b:NERDTreeType == "primary") | q | endif
+" 使用 :NERDTree 触发 nerdtree
 
