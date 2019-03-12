@@ -2,7 +2,7 @@ set cursorline
 set cursorcolumn
 set hlsearch "高亮度反白 set hls|nohls
 set incsearch "递进搜索
-"set ic "搜索忽略大小写, 或者 /abc\c 仅限当前一次使用
+"set ic "搜索忽略大小写, 或z /abc\c
 set backspace=2 "可随时退格键删除
 set ruler "可显示最后一行的状态
 set showmode "左下脚一行状态,__INSERT__
@@ -11,6 +11,23 @@ set bg=dark
 set noerrorbells "不发出声音
 set mouse=a
 syntax on
+
+" 一些操作
+" ^ ,g_ 非空格行首行尾
+" bn ,bp 同时打开多个文件，文件中切换
+" ctrl+d/ctrl+u  向上/ 向下半屏 
+" ctrl+f/ctrl+b  向上/ 向下一屏 
+" n<space> 光标移动到后面第n个字符
+" N<enter> 光标向下移动N行(N<j>)
+" u 复原前一个操作
+" [ctrl]+r 重做上一个操作
+" `.`重复前一个操作
+" 多窗口 : vsp/sp{filename},ctrl+w+[h/j/k/l]切换
+" x=(name_1,vision_3); # this is a comment. "使用W/E移动光标,认为blank是分割符
+" 使用* ,# 代替搜索时的n/N
+" gu/gU 改变大小写；gU$一行改为大写，gu2w
+" fa, 到下一个为a的字符处；t, 到逗号钱的第一个字符
+
 
 autocmd FileType ruby set tabstop=2 |set shiftwidth=2 "tabstop表示Tab代表2个空格的宽度
 autocmd FileType python set tabstop=4 |set shiftwidth=4
@@ -53,4 +70,3 @@ map <F2> :NERDTreeToggle<CR> " 使用F2触发
 map <F3> :NERDTreeMirror<CR> 
 "autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") &&b:NERDTreeType == "primary") | q | endif
 " 使用 :NERDTree 触发 nerdtree
-
