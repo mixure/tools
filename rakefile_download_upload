@@ -1,0 +1,37 @@
+# download or upload
+require 'net/ssh' # gem install net-ssh
+require 'net/scp' # gem install net-scp
+
+user=''
+host=''
+passwd=''
+dir_name=''
+remote_dir="/root/local"
+
+
+namespace :admin do
+  desc "downlod #{dir_name} from remote machine"
+    task :download do
+      Net::SSH.start(host,user,
+              :password=>passwd) do |ssh|
+        ssh.exec!("cd #{remote_dir} && tar -czvf #{dir_name}.tgz #{dir_name}")
+        ssh.scp.download!("#{remote_dir}/#{dir_name}.tgz",".")
+        ssh.exec!("cd #{remote_dir} && rm  -rf #{dir_name}.tgz")
+        `rm -rf #{dir_name}`
+        `tar -xzvf #{dir_name}.tgz`
+        `rm -rf #{dir_name}.tgz`
+      end
+    end
+
+  desc "upload #{dir_name} to remote machine"
+    task :upload do
+      Net::SSH.start(host,user,
+              :password=>passwd) do |ssh|
+        `tar -czvf #{dir_name}.tgz #{dir_name}`
+        ssh.scp.upload!("./#{dir_name}.tgz","#{remote_dir}/#{dir_name}.tgz")
+        `rm -rf #{dir_name}.tgz`
+        ssh.exec!("cd #{remote_dir} && rm -rf #{dir_name} && \
+        tar -xzvf #{dir_name}.tgz && rm -rf #{dir_name}.tgz")
+      end
+    end
+end
