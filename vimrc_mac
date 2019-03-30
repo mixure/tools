@@ -1,7 +1,7 @@
 set cursorline
 set cursorcolumn
 set hlsearch "高亮度反白 set hls|nohls
-set incsearch "递进搜索
+set incsearch "递进搜索  set is |nois
 "set ic "搜索忽略大小写, 或z /abc\c
 set backspace=2 "可随时退格键删除
 set ruler "可显示最后一行的状态
