@@ -1,0 +1,8 @@
+FROM docker.io/centos:7.3.1611
+
+ADD ./install.sh /usr/local
+ADD ./nvim.appimage /tmp
+ADD ./init.vim /root/.config/nvim/
+RUN sh /usr/local/install.sh
+WORKDIR /root
+
