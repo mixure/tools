@@ -32,6 +32,6 @@
 
 **grant_root_remote_visit_mysql.sh** :  shell授权root远程登陆mysql 容器
 
-**获取明日天气发送短信.rb
+**获取明日天气发送短信.rb**
 
 
